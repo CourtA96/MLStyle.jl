@@ -1,7 +1,7 @@
 # Active patterns
 module Active
 
-if isdefined(Base, :Experimental)
+if isdefined(Base.Experimental, :compiler_options)
     @eval Base.Experimental.@compiler_options optimize=0 compile=min infer=no
 end
 
