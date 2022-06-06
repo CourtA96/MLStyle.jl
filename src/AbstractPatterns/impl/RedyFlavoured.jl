@@ -1,6 +1,6 @@
 module RedyFlavoured
 
-if isdefined(Base.Experimental, :@compiler_options)
+if isdefined(Base.Experimental, :compiler_options)
     @eval Base.Experimental.@compiler_options optimize=0 compile=min infer=no
 end
 
